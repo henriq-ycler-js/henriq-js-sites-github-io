@@ -24,6 +24,17 @@ header {
   z-index: 100;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
 header .logo h1 {
   color: #00ff66;
   font-size: 28px;
