@@ -15,7 +15,7 @@ body {
 header {
   width: 100%;
   padding: 15px 40px;
-  background-color: #111;
+  background-color: #111; /* fundo geral do header */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,13 +24,17 @@ header {
   z-index: 100;
 }
 
+/* Área da logo com fundo branco */
 .logo {
     display: flex;
     align-items: center;
+    background-color: #fff; /* fundo branco */
+    padding: 5px 10px;       /* espaçamento interno */
+    border-radius: 8px;      /* cantos arredondados */
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;  /* diminui o tamanho da logo */
     width: auto;
     display: block;
 }
