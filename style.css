@@ -225,6 +225,26 @@ header {
     display: block;
 }
 
+/* ESTILO CORRIGIDO PARA O BOTÃO DEPOIMENTO */
+.btn-whatsapp-depo {
+    /* Baseado no estilo .btn.outline do seu código */
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px auto 40px auto; /* Adicionei margem inferior para espaçar */
+    transition: 0.3s;
+    
+    border: 2px solid #00ff66;
+    color: #00ff66;
+}
+
+.btn-whatsapp-depo:hover {
+    background: #00ff66;
+    color: black;
+}
+
 /* ===== CONTATO ===== */
 #contato {
     text-align: center;
@@ -242,7 +262,7 @@ header {
     margin-bottom: 30px;
 }
 
-/* ===== ÍCONES SOCIAIS MINIMALISTAS (Bolinha com Inicial) ===== */
+/* ===== ÍCONES SOCIAIS MINIMALISTAS (Bolinha com Inicial) - ATUALIZADO ===== */
 
 /* Estrutura da Lista */
 .social-links {
