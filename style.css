@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +6,29 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #0d0d0d;
+  font-family: "Poppins", sans-serif;
+  background-color: #0D0D0D;
   color: #fff;
-  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-/* ===== HEADER ===== */
+/* ===========================
+   HEADER / CABEÇALHO
+=========================== */
 header {
-  background: #ffffff;
-  padding: 10px 20px;
-  border-bottom: 2px solid #00c86f;
+  width: 100%;
+  padding: 20px;
+  background: #fff; /* faixa branca */
+  border-bottom: 1px solid #ccc;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+/* LOGO + NOME */
 .logo-area {
   display: flex;
   align-items: center;
@@ -33,90 +36,70 @@ header {
 }
 
 .logo-area img {
-  width: 55px;
+  width: 55px;   /* LOGO menor */
   height: 55px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .site-name {
+  color: #000;
   font-size: 24px;
   font-weight: 700;
-  color: #00c86f;
 }
 
-/* MENU DESKTOP */
-.desktop-menu {
+/* MENU GERAL */
+.menu {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
-.desktop-menu a {
+.menu a {
   text-decoration: none;
-  color: #00c86f;
+  color: #2ECC71;
+  font-size: 16px;
   font-weight: 600;
-  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.2s;
 }
 
-.desktop-menu a:hover {
-  color: #009e58;
+.menu a:hover {
+  background: #1f8f4d;
+  color: #fff;
 }
 
-/* MENU MOBILE */
+/* MOBILE MENU APARECE SOMENTE NO CELULAR */
 .mobile-menu {
   display: none;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 .mobile-menu a {
-  color: #00c86f;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
+  color: #2ECC71;
 }
 
-.mobile-menu a:hover {
-  color: #009e58;
-}
-
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
-  .site-name {
-    font-size: 20px;
-  }
-
-  .logo-area img {
-    width: 45px;
-    height: 45px;
-  }
-}
-
-/* ===== HERO ===== */
+/* ===========================
+   HERO / INÍCIO
+=========================== */
 .hero {
+  padding: 80px 20px;
   text-align: center;
-  padding: 70px 20px;
 }
 
 .hero h1 {
   font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 1.4;
+  margin-bottom: 10px;
 }
 
 .hero-text {
   max-width: 600px;
   margin: 0 auto 25px;
   font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 .hero-actions {
@@ -125,165 +108,222 @@ header {
   gap: 15px;
 }
 
-/* ===== BOTÕES ===== */
 .btn {
-  padding: 12px 22px;
+  padding: 12px 18px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
-.primary {
-  background: #00c86f;
+/* BOTÃO VERDE */
+.btn.primary {
+  background: #2ECC71;
   color: #000;
 }
 
-.primary:hover {
-  background: #00a359;
+.btn.primary:hover {
+  background: #1e9d56;
 }
 
-.outline {
-  border: 2px solid #00c86f;
-  color: #00c86f;
+/* BOTÃO CONTORNO */
+.btn.outline {
+  border: 2px solid #2ECC71;
+  color: #2ECC71;
 }
 
-.outline:hover {
-  background: #00c86f;
+.btn.outline:hover {
+  background: #2ECC71;
   color: #000;
 }
 
-/* ===== SERVIÇOS ===== */
+/* ===========================
+   SERVIÇOS
+=========================== */
 .servicos {
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .section-title {
   font-size: 28px;
-  margin-bottom: 25px;
-  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
 .service-card {
-  padding: 15px;
   background: #111;
-  border-radius: 15px;
-  transition: 0.3s;
-  border: 1px solid #00c86f22;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.2s;
 }
 
 .service-card:hover {
-  transform: scale(1.03);
-  border-color: #00c86f;
+  transform: translateY(-5px);
+  background: #151515;
 }
 
-/* ===== PLANOS (ANIMAÇÃO + HOVER) ===== */
+/* ===========================
+   PLANOS (com animação)
+=========================== */
 .planos {
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .plans-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 25px;
 }
 
-/* Animação ao aparecer */
 .plan-card {
   background: #111;
   padding: 25px;
-  border-radius: 15px;
-  border: 1px solid #00c86f22;
-  animation: fadeUp 0.8s ease forwards;
+  border-radius: 16px;
+  border: 1px solid #2ECC71;
+  transition: 0.25s;
   opacity: 0;
-  transition: 0.3s;
+  transform: translateY(40px);
+  animation: aparece 0.8s ease forwards;
 }
 
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(25px) scale(0.95); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
+@keyframes aparece {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Hover */
 .plan-card:hover {
-  transform: scale(1.05);
-  border-color: #00c86f;
-  box-shadow: 0 0 15px #00c86f55;
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3);
 }
 
-/* Destaque */
 .featured {
-  border-color: #00c86f;
-  background: #0b0b0b;
+  border: 2px solid #2ECC71;
 }
 
-/* ===== DEPOIMENTOS ===== */
+.plan-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2ECC71;
+  margin-bottom: 15px;
+}
+
+.plan-list li {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.btn.buy {
+  display: inline-block;
+  margin-top: 15px;
+  background: #2ECC71;
+  color: #000;
+}
+
+.btn.buy:hover {
+  background: #1fa255;
+}
+
+/* ===========================
+   DEPOIMENTOS BONITO
+=========================== */
 .depoimentos-container {
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .depoimentos-grid {
-  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .depoimento-item {
   width: 100%;
   border-radius: 12px;
-  border: 2px solid #00c86f22;
   transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .depoimento-item:hover {
-  transform: scale(1.05);
-  border-color: #00c86f;
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
-/* ===== CONTATO ===== */
+/* ===========================
+   CONTATO
+=========================== */
 .contato {
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  margin-top: 20px;
 }
 
 .icon {
-  background: #111;
-  padding: 12px 18px;
+  background: #2ECC71;
+  padding: 12px 20px;
   border-radius: 10px;
+  font-weight: 700;
+  color: #000;
   text-decoration: none;
-  color: #00c86f;
-  font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid #00c86f22;
+  transition: 0.2s;
 }
 
 .icon:hover {
-  transform: scale(1.1);
-  background: #00c86f;
-  color: #000;
+  background: #1ea857;
 }
 
-/* ===== FOOTER ===== */
+/* ===========================
+   FOOTER
+=========================== */
 footer {
   text-align: center;
-  padding: 25px 0;
-  margin-top: 50px;
-  border-top: 2px solid #00c86f22;
-  color: #aaa;
+  padding: 25px;
+  background: #111;
+  margin-top: 40px;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 768px) {
+
+  /* Menu mobile aparece */
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo-area img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .site-name {
+    font-size: 20px;
+  }
 }
