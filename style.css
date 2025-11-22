@@ -83,6 +83,7 @@ header {
   background-color: #4caf50; /* verde mais vivo */
   color: #000;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,255,0,0.3);
 }
 
 /* Ao clicar */
@@ -91,6 +92,7 @@ header {
   color: #000;
   transform: translateY(0);
 }
+
 /* ===== HERO ===== */
 .hero {
   padding: 120px 40px;
