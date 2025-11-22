@@ -4,21 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Henriq_js</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-</head>
 
+</head>
 <body>
 
+<!-- ========== CABEÇALHO ========== -->
 <header>
   <div class="header-container">
 
+    <!-- LOGO + NOME -->
     <div class="logo-area">
-      <img src="logo.jpeg" alt="Logo Henriq_js">
-      <h1 class="site-name">Henriq_js</h1>
+      <img src="logo.jpeg" alt="HenriqJS">
+      <h1 class="site-name">HenriqJS</h1>
     </div>
 
-    <nav class="desktop-menu">
+    <!-- MENU DESKTOP -->
+    <nav class="menu desktop-menu">
       <a href="#inicio">Início</a>
       <a href="#planos">Planos</a>
       <a href="#servicos">Serviços</a>
@@ -28,7 +32,8 @@
 
   </div>
 
-  <nav class="mobile-menu">
+  <!-- MENU CELULAR -->
+  <nav class="menu mobile-menu">
     <a href="#inicio">Início</a>
     <a href="#planos">Planos</a>
     <a href="#servicos">Serviços</a>
@@ -37,10 +42,14 @@
   </nav>
 </header>
 
+
+<!-- ========== HERO ========== -->
 <section id="inicio" class="hero">
   <h1>Ter um site profissional hoje não é mais um luxo — é uma necessidade.</h1>
+
   <p class="hero-text">
-    A primeira impressão do cliente acontece na internet. Com um site moderno e bem construído, você conquista confiança, se destaca da concorrência e transforma visitantes em clientes.
+    A primeira impressão do cliente acontece na internet. Com um site moderno e bem construído,
+    você conquista confiança, se destaca da concorrência e transforma visitantes em clientes.
   </p>
 
   <div class="hero-actions">
@@ -49,10 +58,13 @@
   </div>
 </section>
 
+
+<!-- ========== SERVIÇOS ========== -->
 <section id="servicos" class="servicos">
   <h2 class="section-title">Serviços</h2>
 
   <div class="services-grid">
+
     <div class="service-card">
       <h3>Site Simples</h3>
       <p>Rápido, bonito e profissional, ideal para quem está começando.</p>
@@ -60,34 +72,37 @@
 
     <div class="service-card">
       <h3>Site Profissional</h3>
-      <p>Projetos completos, com várias páginas, animações e design focado em resultados.</p>
+      <p>Projetos completos com várias páginas, animações e foco em resultados.</p>
     </div>
 
     <div class="service-card">
       <h3>Landing Page</h3>
-      <p>Páginas únicas otimizadas para conversão, vendas ou captação de clientes.</p>
+      <p>Página única altamente otimizada para conversão.</p>
     </div>
 
     <div class="service-card">
       <h3>Manutenção</h3>
-      <p>Atualizações, melhorias e suporte para manter seu site sempre funcionando.</p>
+      <p>Atualizações, melhorias e suporte contínuo.</p>
     </div>
 
     <div class="service-card">
       <h3>SEO</h3>
       <p>Melhore sua posição no Google e atraia clientes organicamente.</p>
     </div>
+
   </div>
 </section>
 
+
+<!-- ========== PLANOS ========== -->
 <section id="planos" class="planos">
   <h2 class="section-title">Planos</h2>
 
   <div class="plans-grid">
 
     <div class="plan-card">
-      <h3 class="plan-title">Iniciante</h3>
-      <div class="plan-price">R$ 50,00</div>
+      <h3>Iniciante</h3>
+      <p class="plan-price">R$ 50,00</p>
       <ul class="plan-list">
         <li>Página única</li>
         <li>Design simples e responsivo</li>
@@ -97,23 +112,23 @@
     </div>
 
     <div class="plan-card featured">
-      <h3 class="plan-title">Profissional</h3>
-      <div class="plan-price">R$ 100,00</div>
+      <h3>Profissional</h3>
+      <p class="plan-price">R$ 100,00</p>
       <ul class="plan-list">
         <li>Até 3 páginas</li>
         <li>Formulário de contato</li>
-        <li>Pequenas animações</li>
+        <li>Animações leves</li>
       </ul>
       <a class="btn buy" href="https://wa.me/558386959637?text=Quero%20o%20Plano%20Profissional">Comprar</a>
     </div>
 
     <div class="plan-card">
-      <h3 class="plan-title">Premium</h3>
-      <div class="plan-price">R$ 150,00</div>
+      <h3>Premium</h3>
+      <p class="plan-price">R$ 150,00</p>
       <ul class="plan-list">
         <li>Até 5 páginas</li>
         <li>Animações avançadas</li>
-        <li>Otimização e suporte</li>
+        <li>Otimização completa</li>
       </ul>
       <a class="btn buy" href="https://wa.me/558386959637?text=Quero%20o%20Plano%20Premium">Comprar</a>
     </div>
@@ -121,19 +136,24 @@
   </div>
 </section>
 
+
+<!-- ========== DEPOIMENTOS ========== -->
 <section id="depoimentos" class="depoimentos-container">
-  <h2 class="section-title">Depoimentos</h2>
+  <h2>Depoimentos</h2>
 
-  <div class="depoimentos-grid" id="lista-depoimentos"></div>
+  <div id="lista-depoimentos" class="depoimentos-grid"></div>
 
-  <a href="https://wa.me/558386959637?text=Quero%20enviar%20um%20depoimento" class="btn primary depo-btn">
-    Enviar Depoimento
+  <a class="btn primary" 
+     href="https://wa.me/558386959637?text=Quero%20enviar%20um%20depoimento">
+     Enviar Depoimento
   </a>
 </section>
 
+
+<!-- ========== CONTATO ========== -->
 <section id="contato" class="contato">
-  <h2 class="section-title">Entre em Contato</h2>
-  <p>Fale comigo pelas redes sociais ou e-mail:</p>
+  <h2>Entre em Contato</h2>
+  <p>Fale comigo pelas redes sociais:</p>
 
   <div class="contact-icons">
     <a href="https://www.instagram.com/hhenriq_js" target="_blank" class="icon">Instagram</a>
@@ -142,19 +162,23 @@
   </div>
 </section>
 
+
+<!-- ========== RODAPÉ ========== -->
 <footer>
   <p>© 2025 Henriq_js — Site Oficial.</p>
 </footer>
 
+
+<!-- ========== SCRIPT PARA DEPOIMENTOS AUTOMÁTICOS ========== -->
 <script>
 const depoimentos = ["depoimento1.jpg","depoimento2.jpg","depoimento3.jpg"];
 const lista = document.getElementById("lista-depoimentos");
 
-depoimentos.forEach(src => {
-  const img = document.createElement("img");
-  img.src = "depoimentos/" + src;
-  img.classList.add("depo-img");
-  lista.appendChild(img);
+depoimentos.forEach(img => {
+  const item = document.createElement("img");
+  item.src = "depoimentos/" + img;
+  item.classList.add("depoimento-item");
+  lista.appendChild(item);
 });
 </script>
 
