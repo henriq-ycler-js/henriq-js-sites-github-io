@@ -1,53 +1,51 @@
 /* ===== RESET ===== */
-
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-background-color: #0d0d0d;
-color: #fff;
-font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ===== HEADER ===== */
 header {
-width: 100%;
-padding: 15px 40px;
-background: white;
-display: flex;
-align-items: center;
-justify-content: space-between;
-position: sticky;
-top: 0;
-z-index: 100;
+  width: 100%;
+  padding: 15px 40px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-height: 80px;
-width: auto;
-display: block;
+  height: 80px;
+  width: auto;
+  display: block;
 }
 
 .menu a {
-text-decoration: none;
-margin-left: 25px;
-color: #1a641a;
-font-size: 18px;
-font-weight: 600;
-transition: 0.3s;
+  text-decoration: none;
+  margin-left: 25px;
+  color: #1a641a;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .menu a:hover {
-color: #00ff66;
+  color: #00ff66;
 }
 
 /* ===== HERO ===== */
@@ -277,8 +275,6 @@ footer {
   .plans-grid { flex-direction: column; align-items:center; }
   .plan-card { width: 90%; max-width:520px; }
   .menu { flex-direction: column; margin-top:10px; }
-  .logo-search { flex-direction: column; gap: 8px; }
-  .search-bar input { width: 100%; }
 }
 
 @media(max-width:600px){
