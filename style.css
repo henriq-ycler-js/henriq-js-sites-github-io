@@ -14,41 +14,84 @@ body {
 /* ===== HEADER ===== */
 header {
   width: 100%;
-  padding: 20px 40px;
-  background-color: #111; /* fundo geral do header */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #111;
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 10px 20px;
 }
 
-/* Área da logo com fundo branco */
+.top-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Faixa branca com logo + barra de pesquisa */
+.logo-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
 .logo {
-    display: flex;
-    align-items: center;
-    padding: 40px 300px;      /* espaçamento interno */
-    background-color: #fff;  /* faixa branca */
-    border-radius: 3px;      /* cantos arredondados */
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/* Logo dentro da faixa */
 .logo img {
-    height: 60px;  /* diminui o tamanho da logo */
-    width: auto;
-    display: block;
+  height: 50px;
+  width: auto;
 }
 
-header .logo h1 {
+.logo h1 {
   color: #00ff66;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 180px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background: #00ff66;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background: #00cc55;
+}
+
+/* Menu principal */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 8px;
 }
 
 .menu a {
   text-decoration: none;
-  margin-left: 25px;
   color: #dfffe0;
   font-weight: 600;
   transition: 0.3s;
@@ -285,13 +328,16 @@ footer {
   .plans-grid { flex-direction: column; align-items:center; }
   .plan-card { width: 90%; max-width:520px; }
   .menu { flex-direction: column; margin-top:10px; }
+  .logo-search { flex-direction: column; gap: 8px; }
+  .search-bar input { width: 100%; }
 }
 
 @media(max-width:600px){
-  header { flex-direction: column; padding:15px 20px; }
+  header { padding: 8px 12px; }
   .hero { padding: 80px 20px; }
   .hero h1 { font-size: 28px; }
   .hero-text { font-size: 15px; }
-  .menu a { margin:8px 0; font-size:16px; }
+  .menu { flex-direction: column; gap: 12px; }
+  .logo h1 { font-size: 18px; }
   .contact-icons .icon { width:50px; height:50px; font-size:16px; }
 }
