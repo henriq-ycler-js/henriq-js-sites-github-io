@@ -67,23 +67,32 @@ header {
   flex-wrap: wrap;
 }
 
-/* ===== MENU BOTÕES VERDE ===== */
+/* ===== MENU BOTÕES MODERNOS ===== */
 .menu a {
-  background-color: #1b5e20; /* verde escuro */
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 6px;
+  background: transparent;           /* sem fundo sólido */
+  border: 2px solid #1b5e20;        /* contorno verde escuro */
+  color: #1b5e20;                    /* texto verde escuro */
+  padding: 8px 20px;
+  border-radius: 25px;               /* borda arredondada */
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s, color 0.2s;
+  transition: all 0.3s;
 }
 
+/* Ao passar o mouse */
 .menu a:hover {
-  background-color: #4caf50; /* verde vivo */
-  color: #000;
+  background-color: #1b5e20;         /* fundo verde escuro */
+  color: #fff;                       /* texto branco */
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,255,0,0.3);
 }
 
+/* Ao clicar */
+.menu a:active {
+  background-color: #4caf50;         /* verde mais vivo */
+  color: #fff;
+  transform: translateY(0);
+}
 .menu a:active {
   background-color: #66bb6a; /* verde claro */
   color: #000;
