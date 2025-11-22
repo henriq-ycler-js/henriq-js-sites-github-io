@@ -263,84 +263,62 @@ background-color: #070707;
     box-shadow: 0 5px 15px rgba(0, 255, 102, 0.6);
 }
 
-/* ... (Todo o CSS anterior permanece o mesmo até a seção de Contato) ... */
-
-/* ===== CONTATO (REESTILIZADO) ===== */
+/* ===== CONTATO - ESTILOS BASE (Mantenha o que está no seu CSS) ===== */
 #contato {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #030303;
-    border-top: 1px solid rgba(0, 255, 85, 0.1);
+text-align: center;
+padding: 50px 20px;
+background-color: #030303;
 }
 
 #contato h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #00ff66;
+font-size: 32px;
+margin-bottom: 10px;
 }
 
 #contato p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: #bfeed2;
+font-size: 18px;
+margin-bottom: 30px;
 }
 
+/* NOVO: Contêiner para os botões redondos */
 .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px; /* Espaçamento entre os botões */
-    margin-top: 20px;
+    gap: 25px;
 }
 
-/* Estilo para os novos botões sociais redondos */
+/* NOVO: Estilo para os botões redondos */
 .social-btn {
-    display: flex; /* Para centralizar o ícone SVG */
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 65px; /* Tamanho do botão */
-    height: 65px;
-    border-radius: 50%; /* Faz a bolinha redonda */
-    background-color: rgba(2, 2, 2, 0.7); /* Fundo escuro semitransparente */
-    border: 2px solid rgba(0, 255, 85, 0.3); /* Borda neon suave */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(2, 2, 2, 0.7);
+    border: 2px solid rgba(0, 255, 85, 0.3);
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 255, 85, 0.05);
-    text-decoration: none; /* Remover sublinhado padrão do link */
+    text-decoration: none;
 }
 
 .social-btn:hover {
-    transform: translateY(-5px) scale(1.05); /* Efeito de flutuar e crescer um pouco */
-    background-color: rgba(0, 255, 85, 0.15); /* Fundo um pouco mais claro */
-    border-color: rgba(0, 255, 85, 0.7); /* Borda mais intensa */
-    box-shadow: 0 0 20px rgba(0, 255, 85, 0.6), 0 5px 15px rgba(0, 0, 0, 0.4); /* Brilho neon intenso */
+    transform: scale(1.1);
+    background-color: rgba(0, 255, 85, 0.15);
+    border-color: rgba(0, 255, 85, 0.7);
+    box-shadow: 0 0 15px rgba(0, 255, 85, 0.8);
 }
 
-/* Estilo para os ícones SVG dentro dos botões */
+/* NOVO: Estilo para os ícones SVG dentro dos botões */
 .social-btn svg {
-    width: 32px; /* Tamanho do ícone SVG */
-    height: 32px;
-    fill: #00ff66; /* Cor do ícone (neon) */
+    width: 30px;
+    height: 30px;
+    fill: #00ff66;
     transition: fill 0.3s ease;
 }
 
 .social-btn:hover svg {
-    fill: #0d0d0d; /* Muda a cor do ícone no hover para contrastar com o novo fundo */
+    fill: #0d0d0d; 
 }
-
-
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 920px) {
-    /* ... (o restante da mídia query permanece o mesmo) ... */
-}
-
-@media (max-width: 600px) {
-    /* ... (o restante da mídia query permanece o mesmo) ... */
-    .social-btn {
-        width: 55px; /* Botões menores em telas pequenas */
-        height: 55px;
-    }
-    .social-btn svg {
-        width: 28px; /* Ícones SVG menores em telas pequenas */
-        height: 28px;
-    }
-}
+/* FIM DA SEÇÃO DE CONTATO */
