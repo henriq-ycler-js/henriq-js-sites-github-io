@@ -7,20 +7,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
   <div class="header-container">
-
-    <!-- LOGO + NOME -->
     <div class="logo-area">
-      <img src="logo.jpeg" alt="HenriqJS">
-      <h1 class="site-name">HenriqJS</h1>
+      <img src="logo.jpeg" alt="Henriq_js">
+      <h1 class="site-name">Henriq_js</h1>
     </div>
 
-    <!-- MENU (PC) -->
-    <nav class="menu desktop-menu">
+    <!-- Menu Desktop -->
+    <nav class="desktop-menu">
       <a href="#inicio">Início</a>
       <a href="#planos">Planos</a>
       <a href="#servicos">Serviços</a>
@@ -29,8 +26,8 @@
     </nav>
   </div>
 
-  <!-- MENU (CELULAR) -->
-  <nav class="menu mobile-menu">
+  <!-- Menu Mobile -->
+  <nav class="mobile-menu">
     <a href="#inicio">Início</a>
     <a href="#planos">Planos</a>
     <a href="#servicos">Serviços</a>
@@ -117,17 +114,22 @@
 </section>
 
 <section id="depoimentos" class="depoimentos-container">
-  <h2>Depoimentos</h2>
-  <div id="lista-depoimentos" class="depoimentos-grid"></div>
-  <a href="https://wa.me/558386959637?text=Quero%20enviar%20um%20depoimento" class="btn primary">Enviar Depoimento</a>
+  <h2 class="section-title">Depoimentos</h2>
+
+  <div class="depoimentos-grid" id="lista-depoimentos"></div>
+
+  <a href="https://wa.me/558386959637?text=Quero%20enviar%20um%20depoimento" class="btn primary depo-btn">
+    Enviar Depoimento
+  </a>
 </section>
 
 <section id="contato" class="contato">
-  <h2>Entre em Contato</h2>
+  <h2 class="section-title">Entre em Contato</h2>
   <p>Fale comigo pelas redes sociais ou e-mail:</p>
+
   <div class="contact-icons">
-    <a href="https://www.instagram.com/hhenriq_js" target="_blank" class="icon">IG</a>
-    <a href="https://wa.me/558386959637" target="_blank" class="icon">WA</a>
+    <a href="https://www.instagram.com/hhenriq_js" target="_blank" class="icon">Instagram</a>
+    <a href="https://wa.me/558386959637" target="_blank" class="icon">WhatsApp</a>
     <a href="mailto:henriqjs219@gmail.com" class="icon">Gmail</a>
   </div>
 </section>
@@ -139,11 +141,12 @@
 <script>
 const depoimentos = ["depoimento1.jpg","depoimento2.jpg","depoimento3.jpg"];
 const lista = document.getElementById("lista-depoimentos");
-depoimentos.forEach(img => {
-  const item = document.createElement("img");
-  item.src = "depoimentos/" + img;
-  item.classList.add("depoimento-item");
-  lista.appendChild(item);
+
+depoimentos.forEach(src => {
+  const img = document.createElement("img");
+  img.src = "depoimentos/" + src;
+  img.classList.add("depo-img");
+  lista.appendChild(img);
 });
 </script>
 
