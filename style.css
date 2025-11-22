@@ -211,59 +211,21 @@ border-color: rgba(0, 255, 85, 0.45);
 box-shadow: 0 12px 30px rgba(0, 255, 85, 0.08);
 }
 
-/* ===== DEPOIMENTOS (MELHORADO) ===== */
+/* ===== DEPOIMENTOS (Original) ===== */
 .depoimentos-container {
-padding: 50px 20px 80px;
+padding: 20px;
 text-align: center;
-background-color: #070707; 
-}
-
-#lista-depoimentos {
-    display: flex; 
-    gap: 25px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
 }
 
 #lista-depoimentos img {
-    /* Estilo de cartão para as imagens de depoimento */
-    width: 100%;
-    max-width: 300px;
-    margin: 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 255, 102, 0.2);
-    border: 1px solid rgba(0, 255, 85, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+width: 90%;
+max-width: 260px;
+margin: 15px auto;
+border-radius: 10px;
+display: block;
 }
 
-#lista-depoimentos img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 30px rgba(0, 255, 102, 0.4);
-}
-
-.btn-whatsapp-depo {
-    /* Estilo para o botão "Enviar Depoimento" */
-    margin-top: 40px;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 18px;
-    text-decoration: none;
-    display: inline-block;
-    background: #00ff66;
-    color: #0d0d0d;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-whatsapp-depo:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 255, 102, 0.6);
-}
-
-/* ===== CONTATO - ESTILOS BASE (Mantenha o que está no seu CSS) ===== */
+/* ===== CONTATO (Modificado com Botões Redondos) ===== */
 #contato {
 text-align: center;
 padding: 50px 20px;
@@ -280,7 +242,7 @@ font-size: 18px;
 margin-bottom: 30px;
 }
 
-/* NOVO: Contêiner para os botões redondos */
+/* Estilos para os novos botões redondos */
 .social-links {
     display: flex;
     justify-content: center;
@@ -288,7 +250,6 @@ margin-bottom: 30px;
     gap: 25px;
 }
 
-/* NOVO: Estilo para os botões redondos */
 .social-btn {
     display: flex;
     justify-content: center;
@@ -310,7 +271,6 @@ margin-bottom: 30px;
     box-shadow: 0 0 15px rgba(0, 255, 85, 0.8);
 }
 
-/* NOVO: Estilo para os ícones SVG dentro dos botões */
 .social-btn svg {
     width: 30px;
     height: 30px;
@@ -321,4 +281,59 @@ margin-bottom: 30px;
 .social-btn:hover svg {
     fill: #0d0d0d; 
 }
-/* FIM DA SEÇÃO DE CONTATO */
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 920px) {
+/* Hero e títulos menores */
+.hero h1 {
+font-size: 32px;
+}
+.hero-text {
+width: 90%;
+font-size: 16px;
+}
+/* Planos empilhados */
+.plans-grid {
+flex-direction: column;
+align-items: center;
+}
+.plan-card {
+width: 90%;
+max-width: 520px;
+}
+/* Menu vertical opcional */
+.menu {
+flex-direction: column;
+margin-top: 10px;
+}
+}
+
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+padding: 15px 20px;
+}
+.hero {
+padding: 80px 20px;
+}
+.hero h1 {
+font-size: 28px;
+}
+.hero-text {
+font-size: 15px;
+}
+.menu a {
+margin: 8px 0;
+font-size: 16px;
+}
+/* Responsividade para os novos botões */
+.social-btn {
+    width: 50px;
+    height: 50px;
+}
+.social-btn svg {
+    width: 25px;
+    height: 25px;
+}
+}
