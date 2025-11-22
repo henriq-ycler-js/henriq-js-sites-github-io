@@ -1,3 +1,16 @@
+/* ===== VARIÁVEIS CSS ===== */
+:root {
+    --color-primary: #00ff66; /* Verde Neon Principal */
+    --color-primary-dark: #1a641a; /* Verde mais escuro do menu */
+    --color-background-dark: #0d0d0d;
+    --color-background-darker: #000000;
+    --color-text-light: #fff;
+    --color-text-dark: #000000;
+    --color-text-secondary: #cfeee0; /* Texto do Hero */
+    --color-card-bg-start: rgba(2,2,2,0.9);
+    --color-card-bg-end: rgba(8,8,8,0.85);
+}
+
 /* ===== RESET GERAL ===== */
 * {
     margin: 0;
@@ -6,8 +19,8 @@
 }
 
 body {
-    background-color: #0d0d0d;
-    color: #fff;
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,7 +28,7 @@ body {
 header {
     width: 100%;
     padding: 15px 40px;
-    background: white;
+    background: var(--color-text-light);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,14 +51,14 @@ header {
 .menu a {
     text-decoration: none;
     margin-left: 25px;
-    color: #1a641a;
+    color: var(--color-primary-dark);
     font-size: 18px;
     font-weight: 600;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #00ff66;
+    color: var(--color-primary);
 }
 
 /* ===== HERO ===== */
@@ -57,7 +70,7 @@ header {
 
 .hero h1 {
     font-size: 42px;
-    color: #00ff66;
+    color: var(--color-primary);
     margin-bottom: 20px;
 }
 
@@ -66,10 +79,10 @@ header {
     margin: 20px auto;
     line-height: 1.6;
     font-size: 18px;
-    color: #cfeee0;
+    color: var(--color-text-secondary);
 }
 
-/* ===== BUTTONS GERAIS ===== */
+/* ===== BUTTONS GERAIS (AJUSTADO PARA MELHOR CONTRASTE) ===== */
 .btn {
     padding: 12px 25px;
     border-radius: 8px;
@@ -78,11 +91,12 @@ header {
     display: inline-block;
     margin: 10px;
     transition: 0.3s;
+    font-weight: 600;
 }
 
 .primary {
-    background: #00ff66;
-    color: rgb(73, 172, 126);
+    background: var(--color-primary);
+    color: var(--color-background-dark); /* Alto Contraste */
 }
 
 .primary:hover {
@@ -90,13 +104,13 @@ header {
 }
 
 .outline {
-    border: 2px solid #00ff66;
-    color: #00ff66;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
 }
 
 .outline:hover {
-    background: #00ff66;
-    color: black;
+    background: var(--color-primary);
+    color: var(--color-background-darker);
 }
 
 /* ===== PLANOS E SERVIÇOS (Geral) ===== */
@@ -107,7 +121,7 @@ header {
     margin: 40px 0 18px;
 }
 
-/* ===== PLANOS GRID E CARDS ===== */
+/* ===== PLANOS GRID E CARDS (HOVER MAIS SUTIL) ===== */
 .plans-grid {
     display: flex;
     gap: 18px;
@@ -117,7 +131,7 @@ header {
 }
 
 .plan-card {
-    background: linear-gradient(180deg, rgba(2,2,2,0.9), rgba(8,8,8,0.85));
+    background: linear-gradient(180deg, var(--color-card-bg-start), var(--color-card-bg-end));
     border-radius: 12px;
     padding: 22px;
     width: 300px;
@@ -136,7 +150,7 @@ header {
 }
 
 .plan-price {
-    color: #00ff55;
+    color: var(--color-primary);
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 12px;
@@ -160,7 +174,7 @@ header {
     padding: 10px 16px;
     border-radius: 10px;
     background: linear-gradient(90deg, rgba(0,255,85,0.12), rgba(0,255,85,0.06));
-    color: #00ff55;
+    color: var(--color-primary);
     border: 1px solid rgba(0,255,85,0.2);
     box-shadow: 0 8px 24px rgba(0,255,85,0.02);
 }
@@ -172,7 +186,7 @@ header {
 }
 
 .plan-card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-8px); /* Ajuste mais sutil */
     border-color: rgba(0,255,85,0.7);
     box-shadow: 0 30px 60px rgba(0,255,85,0.08), 0 6px 20px rgba(0,0,0,0.6);
 }
@@ -191,7 +205,7 @@ header {
 }
 
 .service-card {
-    background: linear-gradient(180deg, rgba(2,2,2,0.9), rgba(10,10,10,0.85));
+    background: linear-gradient(180deg, var(--color-card-bg-start), rgba(10,10,10,0.85));
     border-radius: 12px;
     padding: 20px;
     border: 1px solid rgba(0, 255, 85, 0.08);
@@ -200,7 +214,7 @@ header {
 }
 
 .service-card h3 {
-    color: #00ff55;
+    color: var(--color-primary);
     font-size: 18px;
     margin-bottom: 8px;
 }
@@ -225,24 +239,10 @@ header {
     display: block;
 }
 
-/* ESTILO CORRIGIDO PARA O BOTÃO DEPOIMENTO (btn-whatsapp-depo) */
-.btn-whatsapp-depo {
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 18px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px auto 40px auto; /* Adicionei margem inferior para espaçar */
-    transition: 0.3s;
-    
-    border: 2px solid #00ff66;
-    color: #00ff66;
+.btn-depo-margin {
+    margin: 10px auto 40px auto; 
 }
 
-.btn-whatsapp-depo:hover {
-    background: #00ff66;
-    color: black;
-}
 
 /* ===== CONTATO ===== */
 #contato {
@@ -261,9 +261,8 @@ header {
     margin-bottom: 30px;
 }
 
-/* ===== ÍCONES SOCIAIS MINIMALISTAS (Bolinha com Inicial) - ESTILO FINAL ===== */
+/* ===== ÍCONES SOCIAIS (Logos/Font Awesome) ===== */
 
-/* Estrutura da Lista */
 .social-links {
     list-style: none;
     padding: 0;
@@ -273,11 +272,6 @@ header {
     gap: 25px; 
 }
 
-.social-links li {
-    display: inline-block;
-}
-
-/* Estilo Base da Bolinha (O elemento <a>) */
 .social-icon {
     display: flex; 
     justify-content: center;
@@ -288,9 +282,8 @@ header {
     border-radius: 50%;
     
     font-size: 24px; 
-    font-weight: bold;
     text-decoration: none;
-    color: #00ff66;
+    color: var(--color-primary);
 
     background-color: rgba(2, 2, 2, 0.7); 
     border: 2px solid rgba(0, 255, 85, 0.3); 
@@ -299,12 +292,11 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Efeito Hover */
 .social-icon:hover {
     transform: scale(1.15); 
-    background-color: #00ff66;
-    color: #0d0d0d; 
-    border-color: #00ff66;
+    background-color: var(--color-primary);
+    color: var(--color-background-dark); 
+    border-color: var(--color-primary);
     box-shadow: 0 0 20px rgba(0, 255, 85, 0.8);
 }
 
@@ -314,7 +306,7 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #bfeed2;
-    background-color: #000000;
+    background-color: var(--color-background-darker);
 }
 
 /* ===== RESPONSIVIDADE ===== */
