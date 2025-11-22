@@ -1,368 +1,339 @@
-/* ===== VARIÁVEIS CSS ===== */
-:root {
-    --color-primary: #00ff66; /* Verde Neon Principal */
-    --color-primary-dark: #1a641a; /* Verde mais escuro do menu */
-    --color-background-dark: #0d0d0d;
-    --color-background-darker: #000000;
-    --color-text-light: #fff;
-    --color-text-dark: #000000;
-    --color-text-secondary: #cfeee0; /* Texto do Hero */
-    --color-card-bg-start: rgba(2,2,2,0.9);
-    --color-card-bg-end: rgba(8,8,8,0.85);
-}
-
 /* ===== RESET GERAL ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-    background-color: var(--color-background-dark);
-    color: var(--color-text-light);
-    font-family: Arial, Helvetica, sans-serif;
+background-color: #0d0d0d;
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ===== HEADER ===== */
 header {
-    width: 100%;
-    padding: 15px 40px;
-    background: var(--color-text-light);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+width: 100%;
+padding: 15px 40px;
+background: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0;
+z-index: 100;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 
 .logo img {
-    height: 80px;
-    width: auto;
-    display: block;
+height: 80px;
+width: auto;
+display: block;
 }
 
 .menu a {
-    text-decoration: none;
-    margin-left: 25px;
-    color: var(--color-primary-dark);
-    font-size: 18px;
-    font-weight: 600;
-    transition: 0.3s;
+text-decoration: none;
+margin-left: 25px;
+color: #1a641a;
+font-size: 18px;
+font-weight: 600;
+transition: 0.3s;
 }
 
 .menu a:hover {
-    color: var(--color-primary);
+color: #00ff66;
 }
 
 /* ===== HERO ===== */
 .hero {
-    padding: 120px 40px;
-    text-align: center;
-    background: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(6,6,6,1) 100%);
+padding: 120px 40px;
+text-align: center;
+background: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(6,6,6,1) 100%);
 }
 
 .hero h1 {
-    font-size: 42px;
-    color: var(--color-primary);
-    margin-bottom: 20px;
+font-size: 42px;
+color: #00ff66;
+margin-bottom: 20px;
 }
 
 .hero-text {
-    width: 70%;
-    margin: 20px auto;
-    line-height: 1.6;
-    font-size: 18px;
-    color: var(--color-text-secondary);
+width: 70%;
+margin: 20px auto;
+line-height: 1.6;
+font-size: 18px;
+color: #cfeee0;
 }
 
-/* ===== BUTTONS GERAIS (AJUSTADO PARA MELHOR CONTRASTE) ===== */
+/* ===== BUTTONS GERAIS ===== */
 .btn {
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 18px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px;
-    transition: 0.3s;
-    font-weight: 600;
+padding: 12px 25px;
+border-radius: 8px;
+font-size: 18px;
+text-decoration: none;
+display: inline-block;
+margin: 10px;
+transition: 0.3s;
 }
 
 .primary {
-    background: var(--color-primary);
-    color: var(--color-background-dark); /* Alto Contraste */
+background: #00ff66;
+color: rgb(73, 172, 126);
 }
 
 .primary:hover {
-    opacity: 0.8;
+opacity: 0.8;
 }
 
 .outline {
-    border: 2px solid var(--color-primary);
-    color: var(--color-primary);
+border: 2px solid #00ff66;
+color: #00ff66;
 }
 
 .outline:hover {
-    background: var(--color-primary);
-    color: var(--color-background-darker);
+background: #00ff66;
+color: black;
 }
 
 /* ===== PLANOS E SERVIÇOS (Geral) ===== */
 .section-title {
-    text-align: center;
-    color: #dfffe0;
-    font-size: 28px;
-    margin: 40px 0 18px;
+text-align: center;
+color: #dfffe0;
+font-size: 28px;
+margin: 40px 0 18px;
 }
 
-/* ===== PLANOS GRID E CARDS (HOVER MAIS SUTIL) ===== */
+/* ===== PLANOS GRID E CARDS ===== */
 .plans-grid {
-    display: flex;
-    gap: 18px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0 18px 60px;
+display: flex;
+gap: 18px;
+justify-content: center;
+flex-wrap: wrap;
+padding: 0 18px 60px;
 }
 
 .plan-card {
-    background: linear-gradient(180deg, var(--color-card-bg-start), var(--color-card-bg-end));
-    border-radius: 12px;
-    padding: 22px;
-    width: 300px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
-    border: 1px solid rgba(0,255,85,0.06);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+background: linear-gradient(180deg, rgba(2,2,2,0.9), rgba(8,8,8,0.85));
+border-radius: 12px;
+padding: 22px;
+width: 300px;
+box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+border: 1px solid rgba(0,255,85,0.06);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 
 .plan-title {
-    color: #e9fff0;
-    font-size: 18px;
-    margin-bottom: 8px;
+color: #e9fff0;
+font-size: 18px;
+margin-bottom: 8px;
 }
 
 .plan-price {
-    color: var(--color-primary);
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 12px;
-    text-shadow: 0 0 10px rgba(0,255,85,0.12);
+color: #00ff55;
+font-size: 26px;
+font-weight: 700;
+margin-bottom: 12px;
+text-shadow: 0 0 10px rgba(0,255,85,0.12);
 }
 
 .plan-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 18px;
-    color: #bfeed2;
+list-style: none;
+padding: 0;
+margin-bottom: 18px;
+color: #bfeed2;
 }
 
 .plan-list li {
-    margin-bottom: 8px;
-    font-size: 14px;
+margin-bottom: 8px;
+font-size: 14px;
 }
 
 .plan-card .btn.buy {
-    align-self: start;
-    padding: 10px 16px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, rgba(0,255,85,0.12), rgba(0,255,85,0.06));
-    color: var(--color-primary);
-    border: 1px solid rgba(0,255,85,0.2);
-    box-shadow: 0 8px 24px rgba(0,255,85,0.02);
+align-self: start;
+padding: 10px 16px;
+border-radius: 10px;
+background: linear-gradient(90deg, rgba(0,255,85,0.12), rgba(0,255,85,0.06));
+color: #00ff55;
+border: 1px solid rgba(0,255,85,0.2);
+box-shadow: 0 8px 24px rgba(0,255,85,0.02);
 }
 
 .plan-card.featured {
-    transform: translateY(-2px);
-    border-color: rgba(0,255,85,0.35);
-    box-shadow: 0 18px 40px rgba(0,255,85,0.04);
+transform: translateY(-2px);
+border-color: rgba(0,255,85,0.35);
+box-shadow: 0 18px 40px rgba(0,255,85,0.04);
 }
 
 .plan-card:hover {
-    transform: translateY(-8px); /* Ajuste mais sutil */
-    border-color: rgba(0,255,85,0.7);
-    box-shadow: 0 30px 60px rgba(0,255,85,0.08), 0 6px 20px rgba(0,0,0,0.6);
+transform: translateY(-12px);
+border-color: rgba(0,255,85,0.7);
+box-shadow: 0 30px 60px rgba(0,255,85,0.08), 0 6px 20px rgba(0,0,0,0.6);
 }
 
 /* ===== SERVIÇOS GRID E CARDS ===== */
 .servicos {
-    padding: 50px 20px 20px;
-    background: #050505;
+padding: 50px 20px 20px;
+background: #050505;
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 25px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+margin-top: 25px;
 }
 
 .service-card {
-    background: linear-gradient(180deg, var(--color-card-bg-start), rgba(10,10,10,0.85));
-    border-radius: 12px;
-    padding: 20px;
-    border: 1px solid rgba(0, 255, 85, 0.08);
-    color: #d4ffe0;
-    transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+background: linear-gradient(180deg, rgba(2,2,2,0.9), rgba(10,10,10,0.85));
+border-radius: 12px;
+padding: 20px;
+border: 1px solid rgba(0, 255, 85, 0.08);
+color: #d4ffe0;
+transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
 
 .service-card h3 {
-    color: var(--color-primary);
-    font-size: 18px;
-    margin-bottom: 8px;
+color: #00ff55;
+font-size: 18px;
+margin-bottom: 8px;
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(0, 255, 85, 0.45);
-    box-shadow: 0 12px 30px rgba(0, 255, 85, 0.08);
+transform: translateY(-8px);
+border-color: rgba(0, 255, 85, 0.45);
+box-shadow: 0 12px 30px rgba(0, 255, 85, 0.08);
 }
 
-/* ===== DEPOIMENTOS ===== */
+/* ===== DEPOIMENTOS (Original) ===== */
 .depoimentos-container {
-    padding: 20px;
-    text-align: center;
+padding: 20px;
+text-align: center;
 }
 
 #lista-depoimentos img {
-    width: 90%;
-    max-width: 260px;
-    margin: 15px auto;
-    border-radius: 10px;
-    display: block;
+width: 90%;
+max-width: 260px;
+margin: 15px auto;
+border-radius: 10px;
+display: block;
 }
 
-.btn-depo-margin {
-    margin: 10px auto 40px auto; 
-}
-
-
-/* ===== CONTATO ===== */
+/* ===== CONTATO (Modificado com Botões Redondos) ===== */
 #contato {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #030303;
+text-align: center;
+padding: 50px 20px;
+background-color: #030303;
 }
 
 #contato h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+font-size: 32px;
+margin-bottom: 10px;
 }
 
 #contato p {
-    font-size: 18px;
-    margin-bottom: 30px;
+font-size: 18px;
+margin-bottom: 30px;
 }
 
-/* ===== ÍCONES SOCIAIS (Logos/Font Awesome) ===== */
-
+/* Estilos para os novos botões redondos */
 .social-links {
-    list-style: none;
-    padding: 0;
-    margin: 30px 0;
     display: flex;
     justify-content: center;
-    gap: 25px; 
+    align-items: center;
+    gap: 25px;
 }
 
-.social-icon {
-    display: flex; 
+.social-btn {
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    width: 60px; 
+    width: 60px;
     height: 60px;
     border-radius: 50%;
-    
-    font-size: 24px; 
-    text-decoration: none;
-    color: var(--color-primary);
-
-    background-color: rgba(2, 2, 2, 0.7); 
-    border: 2px solid rgba(0, 255, 85, 0.3); 
-    box-shadow: 0 0 10px rgba(0, 255, 85, 0.05);
-    
+    background-color: rgba(2, 2, 2, 0.7);
+    border: 2px solid rgba(0, 255, 85, 0.3);
     transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 85, 0.05);
+    text-decoration: none;
 }
 
-.social-icon:hover {
-    transform: scale(1.15); 
-    background-color: var(--color-primary);
-    color: var(--color-background-dark); 
-    border-color: var(--color-primary);
-    box-shadow: 0 0 20px rgba(0, 255, 85, 0.8);
+.social-btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 255, 85, 0.15);
+    border-color: rgba(0, 255, 85, 0.7);
+    box-shadow: 0 0 15px rgba(0, 255, 85, 0.8);
 }
 
-/* Estilo do Rodapé */
-footer {
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #bfeed2;
-    background-color: var(--color-background-darker);
+.social-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: #00ff66;
+    transition: fill 0.3s ease;
 }
+
+.social-btn:hover svg {
+    fill: #0d0d0d; 
+}
+
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 920px) {
-    /* Header e Menu */
-    header {
-        padding: 15px 20px;
-    }
-    .menu a {
-        margin-left: 15px;
-        font-size: 16px;
-    }
-    /* Hero e títulos menores */
-    .hero {
-        padding: 100px 20px;
-    }
-    .hero h1 {
-        font-size: 32px;
-    }
-    .hero-text {
-        width: 90%;
-        font-size: 16px;
-    }
-    /* Planos empilhados */
-    .plans-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-    .plan-card {
-        width: 90%;
-        max-width: 520px;
-    }
+/* Hero e títulos menores */
+.hero h1 {
+font-size: 32px;
+}
+.hero-text {
+width: 90%;
+font-size: 16px;
+}
+/* Planos empilhados */
+.plans-grid {
+flex-direction: column;
+align-items: center;
+}
+.plan-card {
+width: 90%;
+max-width: 520px;
+}
+/* Menu vertical opcional */
+.menu {
+flex-direction: column;
+margin-top: 10px;
+}
 }
 
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        padding: 15px 20px;
-    }
-    .hero {
-        padding: 80px 20px;
-    }
-    .hero h1 {
-        font-size: 28px;
-    }
-    .hero-text {
-        font-size: 15px;
-    }
-    .menu a {
-        margin: 8px 0;
-        font-size: 16px;
-    }
-    /* Responsividade para os ícones sociais */
-    .social-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-    }
+header {
+flex-direction: column;
+padding: 15px 20px;
+}
+.hero {
+padding: 80px 20px;
+}
+.hero h1 {
+font-size: 28px;
+}
+.hero-text {
+font-size: 15px;
+}
+.menu a {
+margin: 8px 0;
+font-size: 16px;
+}
+/* Responsividade para os novos botões */
+.social-btn {
+    width: 50px;
+    height: 50px;
+}
+.social-btn svg {
+    width: 25px;
+    height: 25px;
+}
 }
