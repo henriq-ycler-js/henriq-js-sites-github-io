@@ -28,11 +28,12 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    background-color: #fff; /* fundo branco */
-    padding: 5px 10px;       /* espaçamento interno */
+    padding: 5px 10px;      /* espaçamento interno */
+    background-color: #fff;  /* faixa branca */
     border-radius: 8px;      /* cantos arredondados */
 }
 
+/* Logo dentro da faixa */
 .logo img {
     height: 60px;  /* diminui o tamanho da logo */
     width: auto;
