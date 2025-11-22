@@ -14,7 +14,7 @@ body {
 /* ===== HEADER ===== */
 header {
   width: 100%;
-  padding: 15px 40px;
+  padding: 20px 40px;
   background-color: #111; /* fundo geral do header */
   display: flex;
   justify-content: space-between;
@@ -28,9 +28,9 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    padding: 5px 10px;      /* espaçamento interno */
+    padding: 20px 40px;      /* espaçamento interno */
     background-color: #fff;  /* faixa branca */
-    border-radius: 8px;      /* cantos arredondados */
+    border-radius: 3px;      /* cantos arredondados */
 }
 
 /* Logo dentro da faixa */
