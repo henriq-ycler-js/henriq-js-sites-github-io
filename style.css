@@ -1,294 +1,291 @@
-/* ===============================
-   RESET
-================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== RESET ===== */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #0d0d0d;
-  color: #fff;
-  scroll-behavior: smooth;
+font-family: 'Poppins', sans-serif;
+background-color: #0d0d0d;
+color: #fff;
+line-height: 1.6;
 }
 
-/* ===============================
-   CABEÇALHO
-================================ */
+/* ===== HEADER ===== */
 header {
-  width: 100%;
-  background: #fff;
-  padding: 10px 20px;
-  border-bottom: 2px solid #ddd;
+background: #ffffff;
+padding: 10px 20px;
+border-bottom: 2px solid #00c86f;
 }
 
 .header-container {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
 }
 
-/* LOGO MENOR */
 .logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
 }
 
 .logo-area img {
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
+width: 55px;
+height: 55px;
+border-radius: 10px;
 }
 
 .site-name {
-  font-size: 26px;
-  color: #111;
-  font-weight: 700;
+font-size: 24px;
+font-weight: 700;
+color: #00c86f;
 }
 
-/* MENU */
-.menu {
-  display: flex;
-  gap: 25px;
+/* MENU DESKTOP */
+.desktop-menu {
+display: flex;
+gap: 25px;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #0d0d0d;
-  font-weight: 600;
-  padding: 8px 0;
-  transition: 0.3s;
+.desktop-menu a {
+text-decoration: none;
+color: #00c86f;
+font-weight: 600;
+transition: 0.3s;
 }
 
-/* Hover verde escuro */
-.menu a:hover {
-  color: #0e4f2e;
+.desktop-menu a:hover {
+color: #009e58;
 }
 
-/* MENU CELULAR */
+/* MENU MOBILE */
 .mobile-menu {
-  display: none;
-  justify-content: center;
-  gap: 15px;
-  padding: 10px 0;
+display: none;
+flex-direction: column;
+align-items: center;
+padding-top: 10px;
+gap: 10px;
 }
 
-/* ===============================
-   HERO
-================================ */
+.mobile-menu a {
+color: #00c86f;
+font-weight: 600;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+color: #009e58;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+.desktop-menu {
+display: none;
+}
+
+.mobile-menu {
+display: flex;
+}
+
+.site-name {
+font-size: 20px;
+}
+
+.logo-area img {
+width: 45px;
+height: 45px;
+}
+}
+
+/* ===== HERO ===== */
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: #111;
+text-align: center;
+padding: 70px 20px;
+}
+
+.hero h1 {
+font-size: 28px;
+font-weight: 700;
+margin-bottom: 15px;
 }
 
 .hero-text {
-  color: #ddd;
-  max-width: 700px;
-  margin: 20px auto;
+max-width: 600px;
+margin: 0 auto 25px;
+font-size: 16px;
 }
 
 .hero-actions {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+display: flex;
+justify-content: center;
+gap: 15px;
 }
 
-/* BOTÕES */
+/* ===== BOTÕES ===== */
 .btn {
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-  transition: 0.3s;
+padding: 12px 22px;
+border-radius: 8px;
+font-weight: 600;
+text-decoration: none;
+transition: 0.3s;
 }
 
 .primary {
-  background: #1c8d54;
-  color: #fff;
+background: #00c86f;
+color: #000;
 }
 
 .primary:hover {
-  background: #146b3f;
+background: #00a359;
 }
 
 .outline {
-  border: 2px solid #1c8d54;
-  color: #1c8d54;
+border: 2px solid #00c86f;
+color: #00c86f;
 }
 
 .outline:hover {
-  background: #1c8d5433;
+background: #00c86f;
+color: #000;
 }
 
-/* ===============================
-   SERVIÇOS
-================================ */
+/* ===== SERVIÇOS ===== */
+.servicos {
+padding: 60px 20px;
+text-align: center;
+}
+
 .section-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
+font-size: 28px;
+margin-bottom: 25px;
+font-weight: 700;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
 }
 
 .service-card {
-  background: #111;
-  padding: 25px;
-  border-radius: 10px;
-  transition: 0.3s;
-  border: 1px solid #1c8d54;
+padding: 15px;
+background: #111;
+border-radius: 15px;
+transition: 0.3s;
+border: 1px solid #00c86f22;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  background: #1c8d5410;
+transform: scale(1.03);
+border-color: #00c86f;
 }
 
-/* ===============================
-   PLANOS (COM ANIMAÇÃO)
-================================ */
+/* ===== PLANOS (ANIMAÇÃO + HOVER) ===== */
 .planos {
-  padding: 40px 20px;
+padding: 60px 20px;
+text-align: center;
 }
 
 .plans-grid {
-  max-width: 1100px;
-  margin: auto;
-  gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 25px;
 }
 
+/* Animação ao aparecer */
 .plan-card {
-  background: #111;
-  padding: 30px;
-  border-radius: 12px;
-  border: 2px solid #1c8d54;
-  text-align: center;
-  transition: transform .3s, box-shadow .3s;
+background: #111;
+padding: 25px;
+border-radius: 15px;
+border: 1px solid #00c86f22;
+animation: fadeUp 0.8s ease forwards;
+opacity: 0;
+transition: 0.3s;
 }
 
-/* ANIMAÇÃO */
+@keyframes fadeUp {
+0% { opacity: 0; transform: translateY(25px) scale(0.95); }
+100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Hover */
 .plan-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #1c8d5488;
+transform: scale(1.05);
+border-color: #00c86f;
+box-shadow: 0 0 15px #00c86f55;
 }
 
-.plan-price {
-  font-size: 26px;
-  margin: 10px 0;
-  color: #1c8d54;
+/* Destaque */
+.featured {
+border-color: #00c86f;
+background: #0b0b0b;
 }
 
-.buy {
-  background: #1c8d54;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-.buy:hover {
-  background: #146b3f;
-}
-
-/* ===============================
-   DEPOIMENTOS BONITOS
-================================ */
+/* ===== DEPOIMENTOS ===== */
 .depoimentos-container {
-  padding: 40px 20px;
-  text-align: center;
+padding: 60px 20px;
+text-align: center;
 }
 
 .depoimentos-grid {
-  max-width: 1100px;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+margin-top: 25px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 15px;
 }
 
 .depoimento-item {
-  width: 100%;
-  border-radius: 12px;
-  border: 2px solid #1c8d54;
-  transition: 0.3s;
+width: 100%;
+border-radius: 12px;
+border: 2px solid #00c86f22;
+transition: 0.3s;
 }
 
 .depoimento-item:hover {
-  transform: scale(1.08);
+transform: scale(1.05);
+border-color: #00c86f;
 }
 
-/* ===============================
-   CONTATO
-================================ */
+/* ===== CONTATO ===== */
 .contato {
-  padding: 40px 20px;
-  text-align: center;
+padding: 60px 20px;
+text-align: center;
 }
 
 .contact-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 20px;
 }
 
 .icon {
-  background: #1c8d54;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
+background: #111;
+padding: 12px 18px;
+border-radius: 10px;
+text-decoration: none;
+color: #00c86f;
+font-weight: 600;
+transition: 0.3s;
+border: 1px solid #00c86f22;
 }
 
 .icon:hover {
-  background: #146b3f;
+transform: scale(1.1);
+background: #00c86f;
+color: #000;
 }
 
-/* ===============================
-   RODAPÉ
-================================ */
+/* ===== FOOTER ===== */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #0d0d0d;
-  border-top: 2px solid #1c8d54;
-}
-
-/* ===============================
-   RESPONSIVO (CELULAR)
-================================ */
-@media (max-width: 760px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
-  .site-name {
-    font-size: 22px;
-  }
-
-  .logo-area img {
-    width: 38px;
-    height: 38px;
-  }
+text-align: center;
+padding: 25px 0;
+margin-top: 50px;
+border-top: 2px solid #00c86f22;
+color: #aaa;
 }
