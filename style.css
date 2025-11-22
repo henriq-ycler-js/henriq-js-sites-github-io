@@ -44,42 +44,8 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 80px;
   width: auto;
-}
-
-.logo h1 {
-  color: #00ff66;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-/* Barra de pesquisa */
-.search-bar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.search-bar input {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  width: 180px;
-}
-
-.search-bar button {
-  padding: 8px 12px;
-  background: #00ff66;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.search-bar button:hover {
-  background: #00cc55;
 }
 
 /* Menu principal */
