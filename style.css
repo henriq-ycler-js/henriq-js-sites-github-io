@@ -211,7 +211,7 @@ border-color: rgba(0, 255, 85, 0.45);
 box-shadow: 0 12px 30px rgba(0, 255, 85, 0.08);
 }
 
-/* ===== DEPOIMENTOS ===== */
+/* ===== DEPOIMENTOS (Original) ===== */
 .depoimentos-container {
 padding: 20px;
 text-align: center;
@@ -225,43 +225,24 @@ border-radius: 10px;
 display: block;
 }
 
-/* Adicionando estilo para o botão de depoimento que estava faltando */
-.btn-whatsapp-depo {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-    background: #00ff66;
-    color: #0d0d0d;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-whatsapp-depo:hover {
-    opacity: 0.9;
-}
-
-/* ===== CONTATO (REESTILIZADO) ===== */
+/* ===== CONTATO (Modificado com Botões Redondos) ===== */
 #contato {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #030303;
+text-align: center;
+padding: 50px 20px;
+background-color: #030303;
 }
 
 #contato h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #00ff66; 
+font-size: 32px;
+margin-bottom: 10px;
 }
 
 #contato p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: #bfeed2;
+font-size: 18px;
+margin-bottom: 30px;
 }
 
+/* Contêiner para os novos botões */
 .social-links {
     display: flex;
     justify-content: center;
@@ -274,8 +255,8 @@ display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65px;
-    height: 65px;
+    width: 60px; /* Levemente menor que o último */
+    height: 60px;
     border-radius: 50%;
     background-color: rgba(2, 2, 2, 0.7);
     border: 2px solid rgba(0, 255, 85, 0.3);
@@ -285,16 +266,16 @@ display: block;
 }
 
 .social-btn:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: scale(1.1); /* Efeito de escala simples */
     background-color: rgba(0, 255, 85, 0.15);
     border-color: rgba(0, 255, 85, 0.7);
-    box-shadow: 0 0 20px rgba(0, 255, 85, 0.6), 0 5px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 85, 0.8); /* Brilho neon intenso */
 }
 
 /* Estilo para os ícones SVG dentro dos botões */
 .social-btn svg {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     fill: #00ff66;
     transition: fill 0.3s ease;
 }
@@ -303,9 +284,10 @@ display: block;
     fill: #0d0d0d; 
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
+/* ===== RESPONSIVIDADE ===== /
 @media (max-width: 920px) {
-/* Hero e títulos menores */
+/ Hero e títulos menores /
 .hero h1 {
 font-size: 32px;
 }
@@ -313,7 +295,7 @@ font-size: 32px;
 width: 90%;
 font-size: 16px;
 }
-/* Planos empilhados */
+/ Planos empilhados /
 .plans-grid {
 flex-direction: column;
 align-items: center;
@@ -322,7 +304,7 @@ align-items: center;
 width: 90%;
 max-width: 520px;
 }
-/* Menu vertical opcional */
+/ Menu vertical opcional */
 .menu {
 flex-direction: column;
 margin-top: 10px;
@@ -348,11 +330,11 @@ margin: 8px 0;
 font-size: 16px;
 }
 .social-btn {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 }
 .social-btn svg {
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
 }
 }
