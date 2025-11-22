@@ -56,15 +56,27 @@ header {
   margin-top: 8px;
 }
 
+/* ===== MENU BOTÕES VERDE ===== */
 .menu a {
-  text-decoration: none;
-  color: #dfffe0;
+  background-color: #1b5e20; /* verde escuro */
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
+/* Ao passar o mouse */
 .menu a:hover {
-  color: #00ff66;
+  background-color: #4caf50; /* verde mais vivo */
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Ao clicar */
+.menu a:active {
+  background-color: #66bb6a; /* verde claro */
+  color: #000;
 }
 
 /* ===== HERO ===== */
