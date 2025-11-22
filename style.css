@@ -1,4 +1,4 @@
-/* RESET */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,29 +6,28 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #0D0D0D;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
   color: #fff;
-  scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
-/* ===========================
-   HEADER / CABEÇALHO
-=========================== */
+/* ===== HEADER ===== */
 header {
-  width: 100%;
-  padding: 20px;
-  background: #fff; /* faixa branca */
-  border-bottom: 1px solid #ccc;
+  background: #ffffff;
+  padding: 12px 25px;
+  border-bottom: 2px solid #00c86f;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-/* LOGO + NOME */
+/* LOGO E NOME */
 .logo-area {
   display: flex;
   align-items: center;
@@ -36,70 +35,74 @@ header {
 }
 
 .logo-area img {
-  width: 55px;   /* LOGO menor */
-  height: 55px;
+  width: 48px;      /* DIMINUÍ A LOGO */
+  height: 48px;
   border-radius: 10px;
   object-fit: cover;
 }
 
 .site-name {
-  color: #000;
   font-size: 24px;
   font-weight: 700;
+  color: #00c86f;
 }
 
-/* MENU GERAL */
-.menu {
+/* ===== MENU DESKTOP ===== */
+.desktop-menu {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
-.menu a {
+.desktop-menu a {
   text-decoration: none;
-  color: #2ECC71;
-  font-size: 16px;
+  color: #00c86f;
   font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 6px;
-  transition: 0.2s;
+  font-size: 16px;
+  padding: 4px 6px;
+  transition: 0.25s;
 }
 
-.menu a:hover {
-  background: #1f8f4d;
-  color: #fff;
+.desktop-menu a:hover {
+  color: #009e58;
+  transform: translateY(-2px);
 }
 
-/* MOBILE MENU APARECE SOMENTE NO CELULAR */
+/* ===== MENU MOBILE ===== */
 .mobile-menu {
   display: none;
-  margin-top: 10px;
+  flex-direction: row;
   justify-content: center;
+  width: 100%;
+  gap: 20px;
+  padding-top: 10px;
 }
 
 .mobile-menu a {
-  color: #2ECC71;
+  color: #00c86f;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
 }
 
-/* ===========================
-   HERO / INÍCIO
-=========================== */
+.mobile-menu a:hover {
+  color: #009e58;
+}
+
+/* ===== HERO ===== */
 .hero {
-  padding: 80px 20px;
   text-align: center;
+  padding: 70px 20px;
 }
 
 .hero h1 {
   font-size: 28px;
-  line-height: 1.4;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .hero-text {
   max-width: 600px;
   margin: 0 auto 25px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ccc;
 }
 
 .hero-actions {
@@ -108,219 +111,185 @@ header {
   gap: 15px;
 }
 
+/* ===== BOTÕES ===== */
 .btn {
-  padding: 12px 18px;
+  padding: 12px 22px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.2s;
 }
 
-/* BOTÃO VERDE */
-.btn.primary {
-  background: #2ECC71;
+.primary {
+  background: #00c86f;
   color: #000;
 }
 
-.btn.primary:hover {
-  background: #1e9d56;
+.primary:hover {
+  background: #00a359;
 }
 
-/* BOTÃO CONTORNO */
-.btn.outline {
-  border: 2px solid #2ECC71;
-  color: #2ECC71;
+.outline {
+  border: 2px solid #00c86f;
+  color: #00c86f;
 }
 
-.btn.outline:hover {
-  background: #2ECC71;
+.outline:hover {
+  background: #00c86f;
   color: #000;
 }
 
-/* ===========================
-   SERVIÇOS
-=========================== */
+/* ===== SERVIÇOS ===== */
 .servicos {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .section-title {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
 .service-card {
+  padding: 15px;
   background: #111;
-  padding: 20px;
-  border-radius: 12px;
-  transition: 0.2s;
+  border-radius: 15px;
+  border: 1px solid #00c86f22;
+  transition: 0.25s;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  background: #151515;
+  transform: scale(1.03);
+  border-color: #00c86f;
 }
 
-/* ===========================
-   PLANOS (com animação)
-=========================== */
+/* ===== PLANOS ===== */
 .planos {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .plans-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
 .plan-card {
   background: #111;
   padding: 25px;
-  border-radius: 16px;
-  border: 1px solid #2ECC71;
-  transition: 0.25s;
+  border-radius: 15px;
+  border: 1px solid #00c86f22;
   opacity: 0;
-  transform: translateY(40px);
-  animation: aparece 0.8s ease forwards;
+  animation: fadeUp 0.8s ease forwards;
+  transform-origin: center center;
+  transition: 0.25s;
 }
 
-@keyframes aparece {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(25px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .plan-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00c86f44;
+  border-color: #00c86f;
 }
 
 .featured {
-  border: 2px solid #2ECC71;
+  border-color: #00c86f;
 }
 
-.plan-title {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.plan-price {
-  font-size: 26px;
-  font-weight: 700;
-  color: #2ECC71;
-  margin-bottom: 15px;
-}
-
-.plan-list li {
-  margin-bottom: 8px;
-  color: #ccc;
-}
-
-.btn.buy {
-  display: inline-block;
-  margin-top: 15px;
-  background: #2ECC71;
-  color: #000;
-}
-
-.btn.buy:hover {
-  background: #1fa255;
-}
-
-/* ===========================
-   DEPOIMENTOS BONITO
-=========================== */
+/* ===== DEPOIMENTOS ===== */
 .depoimentos-container {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .depoimentos-grid {
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  gap: 15px;
 }
 
 .depoimento-item {
   width: 100%;
   border-radius: 12px;
-  transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  border: 2px solid #00c86f22;
+  transition: 0.25s;
+  object-fit: cover;
 }
 
 .depoimento-item:hover {
-  transform: scale(1.07);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  transform: scale(1.05);
+  border-color: #00c86f;
 }
 
-/* ===========================
-   CONTATO
-=========================== */
+/* ===== CONTATO ===== */
 .contato {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .icon {
-  background: #2ECC71;
-  padding: 12px 20px;
+  background: #111;
+  padding: 12px 18px;
   border-radius: 10px;
-  font-weight: 700;
-  color: #000;
   text-decoration: none;
-  transition: 0.2s;
+  color: #00c86f;
+  border: 1px solid #00c86f22;
+  font-weight: 600;
+  transition: 0.25s;
 }
 
 .icon:hover {
-  background: #1ea857;
+  background: #00c86f;
+  color: #000;
+  transform: scale(1.1);
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
-  padding: 25px;
-  background: #111;
-  margin-top: 40px;
+  padding: 25px 0;
+  margin-top: 50px;
+  border-top: 2px solid #00c86f22;
+  color: #aaa;
 }
 
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
 
-  /* Menu mobile aparece */
+  /* Esconde menu desktop */
   .desktop-menu {
     display: none;
   }
 
+  /* Mostra menu mobile em linha */
   .mobile-menu {
     display: flex;
     flex-wrap: wrap;
   }
 
+  /* Logo menor no celular */
   .logo-area img {
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
   }
 
   .site-name {
