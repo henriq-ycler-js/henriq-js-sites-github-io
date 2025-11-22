@@ -83,8 +83,7 @@
                 <li>Formulário de contato</li>
                 <li>Pequenas animações</li>
             </ul>
-            <a class="btn buy" href="https://wa.me/558386959637?text=Quero%20o%20Plano%20Profi
-ssional">Comprar</a>
+            <a class="btn buy" href="https://wa.me/558386959637?text=Quero%20o%20Plano%20Profissional">Comprar</a>
         </div>
         <div class="plan-card">
             <h3 class="plan-title">Plano Premium</h3>
@@ -100,19 +99,19 @@ ssional">Comprar</a>
 </section>
 
 <section id="depoimentos" class="depoimentos-container">
-    <h2 class="section-title">Depoimentos</h2>
-    <div id="lista-depoimentos">
-        </div>
+    <h2>Depoimentos</h2>
+    <div id="lista-depoimentos"></div>
+
     <a href="https://wa.me/558386959637?text=Quero%20enviar%20um%20depoimento"
        class="btn-whatsapp-depo">
-        Enviar Meu Depoimento
+        Enviar Depoimento
     </a>
 </section>
 
 <section id="contato">
     <h2>Entre em Contato</h2>
     <p>Fale comigo pelas redes sociais ou e-mail:</p>
-    
+
     <div class="social-links">
         <a href="https://www.instagram.com/hhenriq_js" target="_blank" class="social-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -126,10 +125,6 @@ ssional">Comprar</a>
     </div>
 </section>
 
-<footer>
-    <p>&copy; 2025 Henriq_js. Todos os direitos reservados. | Desenvolvido com 💚 e código.</p>
-</footer>
-
 <script>
     const depoimentos = [
         "depoimento1.jpg",
@@ -142,7 +137,6 @@ ssional">Comprar</a>
     depoimentos.forEach(img => {
         const item = document.createElement("img");
         item.src = "depoimentos/" + img;
-        item.alt = "Depoimento de Cliente"; // Adicionado alt para acessibilidade
         lista.appendChild(item);
     });
 </script>
