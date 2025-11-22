@@ -93,10 +93,6 @@ header {
   color: #fff;
   transform: translateY(0);
 }
-.menu a:active {
-  background-color: #66bb6a; /* verde claro */
-  color: #000;
-}
 
 /* ===== HERO ===== */
 .hero {
