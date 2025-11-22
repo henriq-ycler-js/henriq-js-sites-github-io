@@ -28,7 +28,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    padding: 40px 80px;      /* espaçamento interno */
+    padding: 40px 150px;      /* espaçamento interno */
     background-color: #fff;  /* faixa branca */
     border-radius: 3px;      /* cantos arredondados */
 }
