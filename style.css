@@ -211,44 +211,26 @@ border-color: rgba(0, 255, 85, 0.45);
 box-shadow: 0 12px 30px rgba(0, 255, 85, 0.08);
 }
 
-/* ===== DEPOIMENTOS (MELHORADO) ===== */
+/* ===== DEPOIMENTOS ===== */
 .depoimentos-container {
-padding: 50px 20px 80px;
+padding: 20px;
 text-align: center;
-background-color: #070707; 
-}
-
-#lista-depoimentos {
-    display: flex; 
-    gap: 25px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
 }
 
 #lista-depoimentos img {
-    /* Estilo de cartão para as imagens de depoimento */
-    width: 100%;
-    max-width: 300px;
-    margin: 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 255, 102, 0.2);
-    border: 1px solid rgba(0, 255, 85, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+width: 90%;
+max-width: 260px;
+margin: 15px auto;
+border-radius: 10px;
+display: block;
 }
 
-#lista-depoimentos img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 30px rgba(0, 255, 102, 0.4);
-}
-
+/* Adicionando estilo para o botão de depoimento que estava faltando */
 .btn-whatsapp-depo {
-    /* Estilo para o botão "Enviar Depoimento" */
-    margin-top: 40px;
-    padding: 12px 25px;
+    margin-top: 20px;
+    padding: 10px 20px;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     display: inline-block;
     background: #00ff66;
@@ -259,24 +241,19 @@ background-color: #070707;
 
 .btn-whatsapp-depo:hover {
     opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 255, 102, 0.6);
 }
-
-/* ... (Todo o CSS anterior permanece o mesmo até a seção de Contato) ... */
 
 /* ===== CONTATO (REESTILIZADO) ===== */
 #contato {
     text-align: center;
     padding: 80px 20px;
     background-color: #030303;
-    border-top: 1px solid rgba(0, 255, 85, 0.1);
 }
 
 #contato h2 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #00ff66;
+    color: #00ff66; 
 }
 
 #contato p {
@@ -289,58 +266,93 @@ background-color: #070707;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px; /* Espaçamento entre os botões */
-    margin-top: 20px;
+    gap: 25px;
 }
 
 /* Estilo para os novos botões sociais redondos */
 .social-btn {
-    display: flex; /* Para centralizar o ícone SVG */
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 65px; /* Tamanho do botão */
+    width: 65px;
     height: 65px;
-    border-radius: 50%; /* Faz a bolinha redonda */
-    background-color: rgba(2, 2, 2, 0.7); /* Fundo escuro semitransparente */
-    border: 2px solid rgba(0, 255, 85, 0.3); /* Borda neon suave */
+    border-radius: 50%;
+    background-color: rgba(2, 2, 2, 0.7);
+    border: 2px solid rgba(0, 255, 85, 0.3);
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 255, 85, 0.05);
-    text-decoration: none; /* Remover sublinhado padrão do link */
+    text-decoration: none;
 }
 
 .social-btn:hover {
-    transform: translateY(-5px) scale(1.05); /* Efeito de flutuar e crescer um pouco */
-    background-color: rgba(0, 255, 85, 0.15); /* Fundo um pouco mais claro */
-    border-color: rgba(0, 255, 85, 0.7); /* Borda mais intensa */
-    box-shadow: 0 0 20px rgba(0, 255, 85, 0.6), 0 5px 15px rgba(0, 0, 0, 0.4); /* Brilho neon intenso */
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgba(0, 255, 85, 0.15);
+    border-color: rgba(0, 255, 85, 0.7);
+    box-shadow: 0 0 20px rgba(0, 255, 85, 0.6), 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Estilo para os ícones SVG dentro dos botões */
 .social-btn svg {
-    width: 32px; /* Tamanho do ícone SVG */
+    width: 32px;
     height: 32px;
-    fill: #00ff66; /* Cor do ícone (neon) */
+    fill: #00ff66;
     transition: fill 0.3s ease;
 }
 
 .social-btn:hover svg {
-    fill: #0d0d0d; /* Muda a cor do ícone no hover para contrastar com o novo fundo */
+    fill: #0d0d0d; 
 }
-
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 920px) {
-    /* ... (o restante da mídia query permanece o mesmo) ... */
+/* Hero e títulos menores */
+.hero h1 {
+font-size: 32px;
+}
+.hero-text {
+width: 90%;
+font-size: 16px;
+}
+/* Planos empilhados */
+.plans-grid {
+flex-direction: column;
+align-items: center;
+}
+.plan-card {
+width: 90%;
+max-width: 520px;
+}
+/* Menu vertical opcional */
+.menu {
+flex-direction: column;
+margin-top: 10px;
+}
 }
 
 @media (max-width: 600px) {
-    /* ... (o restante da mídia query permanece o mesmo) ... */
-    .social-btn {
-        width: 55px; /* Botões menores em telas pequenas */
-        height: 55px;
-    }
-    .social-btn svg {
-        width: 28px; /* Ícones SVG menores em telas pequenas */
-        height: 28px;
-    }
+header {
+flex-direction: column;
+padding: 15px 20px;
+}
+.hero {
+padding: 80px 20px;
+}
+.hero h1 {
+font-size: 28px;
+}
+.hero-text {
+font-size: 15px;
+}
+.menu a {
+margin: 8px 0;
+font-size: 16px;
+}
+.social-btn {
+    width: 55px;
+    height: 55px;
+}
+.social-btn svg {
+    width: 28px;
+    height: 28px;
+}
 }
