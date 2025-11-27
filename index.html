@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henriq_js</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henriq_js — Desenvolvimento Web</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Criação de sites profissionais, landing pages, manutenção, SEO e soluções digitais acessíveis." />
+    <meta name="keywords" content="site profissional, criação de site, landing page, desenvolvedor web, SEO" />
+    <meta name="author" content="Henriq_js" />
+
+    <!-- Open Graph (compartilhamento no WhatsApp, Instagram, Facebook) -->
+    <meta property="og:title" content="Henriq_js — Desenvolvimento Web" />
+    <meta property="og:description" content="Sites profissionais acessíveis e otimizados para conversão." />
+    <meta property="og:image" content="logo.jpeg" />
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
     <div class="logo">
-      <img src="logo.jpeg" alt="Henriq_js">
+        <img src="logo.jpeg" alt="Logo Henriq_js" />
     </div>
-    <nav class="menu">
+
+    <nav class="menu" aria-label="Menu principal">
         <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
         <a href="#planos">Planos</a>
@@ -21,51 +33,63 @@
     </nav>
 </header>
 
+<main>
+
 <section id="inicio" class="hero">
     <div class="hero-inner">
         <h1>Ter um site profissional hoje não é mais um luxo — é uma necessidade.</h1>
+
         <p class="hero-text">
-            Hoje em dia, a primeira impressão do cliente acontece na internet. Ter um site profissional não é mais um luxo — é uma ferramenta fundamental para quem quer vender mais, alcançar novas pessoas e mostrar credibilidade.
+            Hoje em dia, a primeira impressão do cliente acontece na internet.
+            Ter um site profissional não é mais um luxo — é uma ferramenta fundamental para quem quer vender mais e alcançar novas pessoas.
             <br><br>
-            Com um site bem feito, você conquista confiança, se destaca da concorrência e transforma visitantes em clientes. Eu estou aqui para criar isso para você: um site bonito, rápido, moderno e totalmente pensado para o seu negócio.
+            Com um site bem feito, você conquista confiança, se destaca da concorrência e transforma visitantes em clientes.
         </p>
+
         <div class="hero-actions">
             <a class="btn primary" href="#planos">Ver planos</a>
-            <a class="btn outline" href="https://wa.me/558386959637">Falar no WhatsApp</a>
+            <a class="btn outline" href="https://wa.me/558386959637" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
     </div>
 </section>
 
 <section id="servicos" class="servicos">
     <h2 class="section-title">Serviços</h2>
+
     <div class="services-grid">
-        <div class="service-card">
+        <article class="service-card">
             <h3>Desenvolvimento de Site Simples</h3>
-            <p>Sites rápidos, bonitos e profissionais para quem está começando e quer presença digital imediata.</p>
-        </div>
-        <div class="service-card">
+            <p>Sites rápidos, bonitos e profissionais para quem quer presença digital imediata.</p>
+        </article>
+
+        <article class="service-card">
             <h3>Site Profissional</h3>
-            <p>Projetos completos com várias páginas, animações e design focado em resultados reais.</p>
-        </div>
-        <div class="service-card">
+            <p>Projetos completos com várias páginas, animações e design focado em resultados.</p>
+        </article>
+
+        <article class="service-card">
             <h3>Landing Page</h3>
-            <p>Páginas únicas extremamente otimizadas para conversão, vendas ou captação de clientes.</p>
-        </div>
-        <div class="service-card">
+            <p>Páginas únicas extremamente otimizadas para conversão.</p>
+        </article>
+
+        <article class="service-card">
             <h3>Manutenção de Site</h3>
-            <p>Atualizações, melhorias e correções para manter seu site sempre funcionando e moderno.</p>
-        </div>
-        <div class="service-card">
+            <p>Atualizações, melhorias e correções para manter seu site moderno e funcional.</p>
+        </article>
+
+        <article class="service-card">
             <h3>Otimização de SEO</h3>
-            <p>Melhore sua posição no Google e atraia mais clientes encontrando seu negócio organicamente.</p>
-        </div>
+            <p>Aumente sua posição no Google com estratégias reais de otimização.</p>
+        </article>
     </div>
 </section>
 
 <section id="planos" class="planos">
     <h2 class="section-title">Planos</h2>
+
     <div class="plans-grid">
-        <div class="plan-card">
+        
+        <article class="plan-card">
             <h3 class="plan-title">Plano Iniciante</h3>
             <div class="plan-price">R$ 50,00</div>
             <ul class="plan-list">
@@ -74,8 +98,9 @@
                 <li>Botão WhatsApp</li>
             </ul>
             <a class="btn buy" href="https://wa.me/558386959637?text=Quero%20o%20Plano%20Iniciante">Comprar</a>
-        </div>
-        <div class="plan-card featured">
+        </article>
+
+        <article class="plan-card featured">
             <h3 class="plan-title">Plano Profissional</h3>
             <div class="plan-price">R$ 100,00</div>
             <ul class="plan-list">
@@ -84,8 +109,9 @@
                 <li>Pequenas animações</li>
             </ul>
             <a class="btn buy" href="https://wa.me/558386959637?text=Quero%20o%20Plano%20Profissional">Comprar</a>
-        </div>
-        <div class="plan-card">
+        </article>
+
+        <article class="plan-card">
             <h3 class="plan-title">Plano Premium</h3>
             <div class="plan-price">R$ 150,00</div>
             <ul class="plan-list">
@@ -94,56 +120,62 @@
                 <li>Otimização e suporte</li>
             </ul>
             <a class="btn buy" href="https://wa.me/558386959637?text=Quero%20o%20Plano%20Premium">Comprar</a>
-        </div>
+        </article>
+
     </div>
 </section>
 
 <section id="depoimentos" class="depoimentos-container">
     <h2 class="section-title">Depoimentos</h2>
-    <div id="lista-depoimentos">
-        </div>
+
+    <div id="lista-depoimentos" class="depoimentos-grid"></div>
+
     <a href="https://wa.me/558386959637?text=Quero%20enviar%20um%20depoimento"
-       class="btn-whatsapp-depo">
+       class="btn-whatsapp-depo" target="_blank" rel="noopener">
         Enviar Meu Depoimento
     </a>
 </section>
 
 <section id="contato">
     <h2>Entre em Contato</h2>
-    <p>Fale comigo pelas redes sociais ou e-mail:</p>
-    
+    <p>Fale comigo pelas redes sociais ou por e-mail:</p>
+
     <div class="social-links">
-        <a href="https://www.instagram.com/hhenriq_js" target="_blank" class="social-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+
+        <a href="https://www.instagram.com/hhenriq_js" target="_blank" class="social-btn" aria-label="Instagram">
+            <!-- Ícone Instagram -->
+            <svg ...></svg>
         </a>
-        <a href="https://wa.me/558386959637" target="_blank" class="social-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+
+        <a href="https://wa.me/558386959637" target="_blank" class="social-btn" aria-label="WhatsApp">
+            <!-- Ícone WhatsApp -->
+            <svg ...></svg>
         </a>
-        <a href="mailto:henriqjs219@gmail.com" class="social-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+
+        <a href="mailto:henriqjs219@gmail.com" class="social-btn" aria-label="E-mail">
+            <!-- Ícone E-mail -->
+            <svg ...></svg>
         </a>
     </div>
 </section>
+
+</main>
 
 <footer>
     <p>&copy; 2025 Henriq_js. Todos os direitos reservados.</p>
 </footer>
 
 <script>
-    // Este script carrega as imagens de depoimento dinamicamente
-    const depoimentos = [
-        "depoimento1.jpg",
-        "depoimento2.jpg",
-        "depoimento3.jpg"
-    ];
+    const depoimentos = ["depoimento1.jpg", "depoimento2.jpg", "depoimento3.jpg"];
 
     const lista = document.getElementById("lista-depoimentos");
 
-    depoimentos.forEach(img => {
-        const item = document.createElement("img");
-        item.src = "depoimentos/" + img;
-        item.alt = "Depoimento de Cliente"; // Adicionar alt para acessibilidade
-        lista.appendChild(item);
+    depoimentos.forEach(src => {
+        const img = document.createElement("img");
+        img.src = "depoimentos/" + src;
+        img.alt = "Depoimento de cliente";
+        img.loading = "lazy"; // desempenho
+        lista.appendChild(img);
     });
 </script>
 
